@@ -1,19 +1,21 @@
 variable "aws_region" {
-  description = "The AWS region where resources will be deployed"
-  type        = string
-  default     = "us-east-1"
+  default = "us-east-1"
 }
 variable "ami_id" {
   description = "The Amazon Machine Image ID for the instance"
-  type        = string
+  default = "us-east-1"
+}
+variable "instance_type" {
+  description = "The Amazon Machine Image ID for the instance"
+  default = "t3.micro"
 }
 variable "key_name" {
   default = The Amazon Machine Image ID for the instance"
-  type        = string
+  default = "id_rsa" 
 }  
-variable "vpc_cidr" {
-  description = "The CIDR block for the custom VPC"
-  type        = string
+variable "instance_type_mumbai" {
+  description = "The Amazon Machine Image ID for the instance"
+  default = "t3.micro"
 }
 
 variable "instance_type" {
