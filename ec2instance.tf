@@ -5,6 +5,7 @@ terraform {
   backend "s3" {
     bucket = "terraformbuket"
     region = "region"
+    key = "terraform bucket"
   }
 }
 resource "aws_instance" "myinstance" {
