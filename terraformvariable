@@ -1,0 +1,21 @@
+provider "aws" {
+  region = "us-west-2"
+}
+terraform {
+  backend "s3" {
+    bucket = "terraformbuket"
+    region = "region"
+    key = "terraform bucket"
+  }
+}
+resource "aws_instance" "myinstance" {
+  ami           = data.aws_ami.ubuntu.id
+  instance_type = "t2.micro"
+  key-name = "id_rsa"
+  vpc_security_group_ids = ["security group id"]
+  tags = {
+    Name = "learn-terraform"
+  }
+}
+variable "ami_id" {
+  default = 
