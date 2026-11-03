@@ -9,11 +9,10 @@ terraform {
   }
 }
 resource "aws_instance" "myinstance" {
-  ami = 
-"ami-0fdcaf433b661372d"
-  instance_type = "t2.micro"
+  ami = "ami-0fdcaf433b661372d"
+  instance_type = "t3.micro"
   key-name = "id_rsa"
-  vpc_security_group_ids = ["security group id"]
+  vpc_security_group_ids = ["sg-079f59ab5da82babc"]
   tags = {
     Name = "learn-terraform"
   }
