@@ -3,13 +3,14 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-    bucket = "terraformbuket"
-    region = "region"
+    bucket = "terraformbd123"
+    region = "us-west-2"
     key = "terraform bucket"
   }
 }
 resource "aws_instance" "myinstance" {
-  ami           = data.aws_ami.ubuntu.id
+  ami = 
+"ami-0fdcaf433b661372d"
   instance_type = "t2.micro"
   key-name = "id_rsa"
   vpc_security_group_ids = ["security group id"]
