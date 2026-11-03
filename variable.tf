@@ -17,14 +17,11 @@ variable "mysg" {
   description = "Security Group"
   default = "Security group id"
 }
-
 variable "rg" {
   description = "The EC2 Region type to deploy"
   default = "Region"
 }
-
 variable "az" {
   description = "Availability Zone"
   default = "Availabilty Zone"
-
 }
