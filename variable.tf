@@ -17,7 +17,7 @@ variable "mysg" {
   description = "Security Group"
   default = "Security group id"
 }
-variable "rg" {
+variable "region" {
   description = "The EC2 Region type to deploy"
   default = "Region"
 }
